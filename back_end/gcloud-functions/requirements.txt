@@ -1,0 +1,8 @@
+kubernetes
+google-cloud
+google-cloud-container
+google-cloud-storage
+PyYAML
+cloudstorage
+flask
+requests

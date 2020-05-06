@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-python
+spec:
+  selector:
+    matchLabels:
+      app: hello-python
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: hello-python
+    spec:
+      containers:
+      - name: application
+        image: index.docker.io/kamiarcoffey/bots-as-a-service:hello-python
+        env:
+          - name: bucket
+            value: "uuuidddddddd234234234"
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 5000

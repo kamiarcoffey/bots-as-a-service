@@ -1,0 +1,26 @@
+[
+    {
+        "service_name" : "translate",
+        "invocation" : {
+            "symbol" : "!",
+            "term" : "translate",
+            "query" : "{{ }}"
+        },
+        "language" : "english",
+        "params" : {
+            "default_language" : "spanish"
+        }
+    }, 
+    {
+        "service_name" : "fandom",
+        "invocation" : {
+            "symbol" : "!",
+            "term" : "fandom",
+            "query" : "< >"
+        },
+        "language" : "english",
+        "params" : {
+            "url" : "https://theoffice.fandom.com/"
+        }
+    }
+]

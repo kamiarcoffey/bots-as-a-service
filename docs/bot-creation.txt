@@ -1,0 +1,29 @@
+title Bot Creation
+participant User
+participant Portal
+participant API
+participant S3
+participant Cluster Manager
+participant Container
+participant reddit
+
+User->Portal: Submit form
+Portal->API: POST /bots
+API->S3: get_currently_existing(name)
+
+alt bot exists
+    S3->API: bot_info
+    API->Portal: error(bot_info)
+    Portal->User: "Bot currently exists!"
+else bot does not exist
+    S3->API: null
+    API->API: validity checks
+    API->S3: bot_config_file.json
+    S3->API: https://s3_file_location
+    API->Cluster Manager: launch_container(https://s3_file_location)
+    Cluster Manager->Container: docker run (https://s3_file_location)
+    API->Portal: 201 - CREATED
+    Portal->User: "We created your container! Please wait."
+    Container->S3: GET https://s3_file_location
+    Container->reddit: work
+end

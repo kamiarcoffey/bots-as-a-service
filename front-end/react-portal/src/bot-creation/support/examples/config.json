@@ -1,0 +1,47 @@
+{
+  "name": "example",
+  "auth": {
+      "client_id": "B-pVZ2UJucTJ7Q",
+      "client_secret": "bS9f3mP6oeeMUy7eWkksohwoazs",
+      "password": "leo030811",
+      "user_agent": "bot for testing other bots",
+      "username": "testing_dummy"
+  },
+  "services": [
+    {
+      "language": "english",
+      "invocation": {
+        "symbol": "!",
+        "term": "fandom",
+        "query": "[[ ]]"
+      },
+      "params": {
+        "url": "https://naruto.fandom.com/"
+      },
+      "service_name": "fandom"
+    },
+    {
+      "language": "english",
+      "invocation": {
+        "symbol": "!",
+        "term": "translate",
+        "query": "[[ ]]"
+      },
+      "params": {
+        "default_language": "english"
+      },
+      "service_name": "translate"
+    }
+  ],
+  "status": {
+    "online": false
+  },
+  "subreddits": [
+    "botsasaservice_test"
+  ],
+  "version_info": {
+    "description": "A bot to be a test account for our bot platform",
+    "name": "BaaS testing bot",
+    "version": "v1.0"
+  }
+}

@@ -1,0 +1,7 @@
+bs4
+praw
+google-cloud-storage
+numpy
+selenium
+googletrans
+mechanize

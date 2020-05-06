@@ -1,0 +1,28 @@
+{
+    "name": "faretix",
+    "auth": {
+      "client_id": "zzv4UeSlQztD9g",
+      "client_secret": "qD7Bk6ba3X95yxrUQNf5tLhR7fY",
+      "username": "faretix",
+      "password": "botsasaservice",
+      "user_agent": "ty bots as a service"
+    },
+    "status": {
+      "online": false,
+      "valid": true
+    },
+    "config": {
+      "subreddits": [
+        "london"
+      ],
+      "comments_enabled": true,
+      "livestream_enabled": false,
+      "keyphrase": "!faretix",
+      "services": [
+        {
+          "service_name": "spellchecker",
+          "language": "en_US"
+        }
+      ]
+    }
+  }
