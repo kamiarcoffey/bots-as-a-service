@@ -8,8 +8,6 @@ Team 10
 - Kamiar Coffey
 - Evan Lee
 
-Try it out! https://joshladd.github.io/bots-as-a-service/#/bots
-
 ### Technology Stack
 
 See: [the wiki](https://github.com/kamiarcoffey/bots-as-a-service/wiki/Architecture)
@@ -19,3 +17,5 @@ See: [the wiki](https://github.com/kamiarcoffey/bots-as-a-service/wiki/Architect
 Our project deals with a bot creation and maintenance service that will provide a GUI to allow users to administer their bots as well as hosting created bots in the cloud.
 
 Our first iteration will deal only with reddit bots and will only allow modular functionality, with the potential to allow for other services like Twitter as well as the potential to allow for custom actions to be taken by the bot.
+
+Checkout my areas of contribution at back_end/gcloud-functions/ 
